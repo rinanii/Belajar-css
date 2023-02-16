@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: white;
+    font-size: 10px;
+    font-family: 'Jost', Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+
+/* Header */
+.header {
+    display: grid;
+    grid-template-areas: 
+       'hero hero feature-1'
+       'hero hero feature-2';
+}
+
+.hero {
+    grid-area: hero;
+    min-height: 350px;
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+.hero > * {
+    display: none;
+}
+
+.features {
+    background-color: black;
+    color: white;
+}
